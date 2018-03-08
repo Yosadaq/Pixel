@@ -13,6 +13,9 @@
 		A5536EDF203DEFB900F033B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5536EDD203DEFB900F033B2 /* LaunchScreen.storyboard */; };
 		A5536EF4203DF1B600F033B2 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5536EF3203DF0E200F033B2 /* MapVC.swift */; };
 		A5536EF7203DF4F300F033B2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5536EF6203DF4F300F033B2 /* DroppablePin.swift */; };
+		A5D447142048778A002F129E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4471320487789002F129E /* PhotoCell.swift */; };
+		A5D4471620487E8B002F129E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4471520487E8B002F129E /* Constants.swift */; };
+		A5D447182049BF5E002F129E /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D447172049BF5E002F129E /* PopVC.swift */; };
 		AA684B6A6DB7A2B2A4044531 /* Pods_Pixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6091C46C2B9ABB46E69F60AE /* Pods_Pixel.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		A5536EE0203DEFB900F033B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5536EF3203DF0E200F033B2 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		A5536EF6203DF4F300F033B2 /* DroppablePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		A5D4471320487789002F129E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		A5D4471520487E8B002F129E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5D447172049BF5E002F129E /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				A5536ED4203DEFB900F033B2 /* AppDelegate.swift */,
-				A5536EF9203DF50A00F033B2 /* Extensions */,
 				A5536EF8203DF4FD00F033B2 /* Utilities */,
+				A5536EF9203DF50A00F033B2 /* Extensions */,
 				A5536EF5203DF4E300F033B2 /* View */,
 				A5536EF2203DF0E200F033B2 /* Controller */,
 				A5536ED8203DEFB900F033B2 /* Main.storyboard */,
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A5536EF3203DF0E200F033B2 /* MapVC.swift */,
+				A5D447172049BF5E002F129E /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A5536EF6203DF4F300F033B2 /* DroppablePin.swift */,
+				A5D4471320487789002F129E /* PhotoCell.swift */,
 			);
 			name = View;
 			path = "New Group";
@@ -113,6 +121,7 @@
 		A5536EF8203DF4FD00F033B2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A5D4471520487E8B002F129E /* Constants.swift */,
 			);
 			name = Utilities;
 			path = "New Group/Utilities";
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D447182049BF5E002F129E /* PopVC.swift in Sources */,
+				A5D4471620487E8B002F129E /* Constants.swift in Sources */,
+				A5D447142048778A002F129E /* PhotoCell.swift in Sources */,
 				A5536ED5203DEFB900F033B2 /* AppDelegate.swift in Sources */,
 				A5536EF7203DF4F300F033B2 /* DroppablePin.swift in Sources */,
 				A5536EF4203DF1B600F033B2 /* MapVC.swift in Sources */,
@@ -400,11 +412,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743W57R595;
 				INFOPLIST_FILE = Pixel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yosadaq.Pixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,11 +429,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743W57R595;
 				INFOPLIST_FILE = Pixel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yosadaq.Pixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
